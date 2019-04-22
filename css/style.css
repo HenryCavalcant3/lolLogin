@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    user-select: none;
+    text-decoration: none
+}
+html, body{
+    width: 100%;
+    height: 100%
+}
+body{
+    zoom: 100%;
+    background: #34495e;
+}
+.name{
+    color: #fff;
+}
+.all{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+.main{
+    position: relative;
+    width: 1024px;
+    height: 576px;
+    border-top: 1px solid #785A28;
+    border-left: 1px solid #1E282D;
+    border-right: 1px solid #1E282D;
+    border-bottom: 1px solid #1E282D;
+    background: #010A13
+}
+.champion-area{
+    position: relative;
+    width: 78%;
+    height: 100%;
+    background-image: url(../images/zed.gif);
+    background-size: cover;
+    float: left;
+    border-right: 1px solid #1E282D
+}
+.champion-area .footer{
+    position: absolute;
+    bottom: 25px;
+    left: 25px
+}
+.champion-area .footer .riot-logo img{
+    width: 50px;
+    float: left;
+    margin-right: 25px
+}
+.champion-area .footer button{
+    position: relative;
+    float: left;
+    background: #121519;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 2px solid #9F7A2D;
+    color: #BBAD84;
+    margin-right: 20px;
+    margin-left: 30px;
+    cursor: pointer
+}
+.champion-area .footer button:hover{
+    border: 2px solid #CBC3B1;
+    background: linear-gradient(#131619, #605338)
+}
+.champion-area .footer button::after{
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    width: 45px;
+    height: 45px;
+    top: -7.7px;
+    left: -7.7px;
+    border: 1px solid #332911;
+    border-radius: 50%
+}
+.champion-area .footer button::before{
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 150%;
+    transform: translate(-35px, -8px);
+    background: #9F7A2D;
+    background: linear-gradient(#231C11, #775927, #231C11)
+}
+.champion-area .footer button i{
+    transform: rotate(90deg);
+    line-height: 35px
+}
+.champion-area .footer div{
+    float: left;
+    padding-top: 1px
+}
+.champion-area .footer div label, input{
+    cursor: pointer
+}
+.champion-area .footer div label:hover{
+    color: #C5D6A6
+}
+.champion-area .footer div input:hover + label{
+    color: #C5D6A6
+}
+.champion-area .footer div .row{
+    clear: both;
+    color: #968D7F;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.9em
+}
+.login-area{
+    position: relative;
+    width: 22%;
+    height: 100%;
+    float: right
+}
+.login-area .lol-logo{
+    text-align: center
+}
+.login-area .lol-logo img{
+    width: 150px
+}
+.login-area .btns-ops{
+    text-align: right
+}
+.login-area .btns-ops button{
+    justify-content: right;
+    color: #928E81;
+    background: none;
+    border: none;
+    margin-top: 10px;
+    margin-right: 15px;
+    margin-bottom: 20px;
+    cursor: pointer
+}
+.login-area .btns-ops button:hover{
+    color: #D6CEBD
+}
+.login-area .form form{
+    margin: 0 20px
+}
+.login-area .form form .label-header{
+    color: #E1E6D2;
+    font-family: 'Merriweather', serif;
+    display: block;
+    font-size: 0.8em;
+    margin: 20px 0
+}
+.login-area .form form label{
+    color: #91887C;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.85em
+}
+.login-area .form form input{
+    display: block
+}
+.login-area .form form button{
+    display: block;
+    width: 100%;
+    margin-top: 50px;
+    height: 30px;
+    background: #10161E;
+    border: 2px solid #0496AA;
+    color: #A3C7C7;
+    font-family: 'Merriweather', serif;
+    line-height: 30px;
+    cursor: pointer
+}
+.login-area .form form button:hover{
+    border: 2px solid #AEF5F4;
+    background: linear-gradient(#101F27, #0C5461);
+    color: #B7F3F2
+}
+.login-area .form form .select{
+    margin-top: 10px
+}
+.login-area .form form .select label{
+    cursor: text
+}
+.login-area .form form .select select{
+    background: none;
+    border: none;
+    color: #BBAA62;
+    position: relative;
+    left: -3.5px;
+    cursor: pointer
+}
+.login-area .form form .select select:hover{
+    color: #C5D6A6
+}
+.login-area .form form input[type="text"], input[type="password"]{
+    border: 1px solid #9F7A2D;
+    font-family: 'Roboto', sans-serif;
+    background: #000306;
+    color: #E8DECB;
+    font-size: 1em;
+    padding: 6px 5px;
+    width: 100%;
+    margin-bottom: 15px;
+    cursor: text
+}
+.login-area .form form input[type="text"]:focus{
+    border: 1px solid #BBA068;
+    background: linear-gradient(#070F18, #141C23)
+}
+.login-area .form form input[type="password"]:focus{
+    border: 1px solid #BBA068;
+    background: linear-gradient(#070F18, #141C23)
+}
+.login-area .form form input[type="checkbox"]{
+    display: inline-block
+}
+.login-area .form form input[type="checkbox"] + label{
+    cursor: pointer
+}
+.login-area .form form input[type="checkbox"]:hover + label{
+    color: #C5D6A6
+}
+.login-area .extra{
+    margin: 0 20px;
+    position: absolute;
+    bottom: 50px
+}
+.login-area .extra a{
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.8em;
+    color: #0296AA
+}
+.login-area .extra a:hover{
+    color: #B2CCA3
+}
+.login-area .extra a i{
+    padding-left: 5px;
+    transform: rotate(45deg)
+}
+.login-area .footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    border-top: 1px solid #1E282D;
+    text-align: center;
+    color: #3C3A3F;
+    font-family: 'Merriweather', serif;
+    font-size: 0.8em;
+    padding: 10px 0
+}
+
+
+#control-animation{
+    position: absolute;
+    top: 89.2%;
+    left: 18.1%;
+    z-index: 3;
+}
+#control-animation:checked + .champion-area{
+    background-image: url(../images/back.png);
+}
